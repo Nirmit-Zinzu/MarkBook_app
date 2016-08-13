@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nirmit.markbook.MainActivity"
+    android:background="#f01c1e1e" >
+
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/addMarksBtn"
+        android:id="@+id/addMarkButton"
+        android:onClick="goNextActivity"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="#a7ab91"
+        android:textColor="@color/black"
+        android:layout_toEndOf="@+id/nZlogo" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:src="@drawable/cover_page"
+        android:contentDescription="@string/markBookTitle"
+        android:layout_above="@+id/addMarkButton"
+        android:layout_alignParentTop="true" />
+
+<!--    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:id="@+id/title"
+        android:src="@drawable/title"
+        android:layout_alignParentStart="true"
+        android:contentDescription="@string/markBookTitle" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="250dip"
+        android:id="@+id/marks"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dip"
+        android:src="@drawable/marks"
+        android:layout_below="@id/title"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:contentDescription="@string/markBookLogo"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"/>-->
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/nZlogo"
+        android:src="@drawable/logo"
+        android:scaleType="fitCenter"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="#a09fba"/>
+
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLargeInverse"
+        android:text="Nirmit Z."
+        android:id="@+id/textView"
+        android:theme="@style/Base.DialogWindowTitle.AppCompat"
+        android:textColor="#e9f1eb"
+        android:layout_alignBottom="@+id/nZlogo"
+        android:layout_alignTop="@+id/nZlogo"
+        android:textAlignment="center"
+        android:layout_toEndOf="@+id/nZlogo"
+        android:layout_alignParentEnd="false"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:background="#4c5454" />-->
+
+
+</RelativeLayout>

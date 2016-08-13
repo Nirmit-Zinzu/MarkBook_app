@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding ="10dp"
+    android:background="#85adad">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/id"
+        android:id="@+id/ID"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/course"
+        android:id="@+id/course"
+        android:textSize="30sp"
+        android:layout_alignTop="@+id/ID"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/mark"
+        android:id="@+id/courseMark"
+        android:textSize="30sp"
+        android:layout_alignTop="@+id/course"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/credit"
+        android:id="@+id/courseCredit"
+        android:layout_alignTop="@+id/term"
+        android:layout_alignEnd="@+id/courseMark" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/year"
+        android:id="@+id/year"
+        android:layout_below="@+id/ID"
+        android:layout_alignStart="@+id/ID" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/termExample"
+        android:id="@+id/term"
+        android:layout_below="@+id/course"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

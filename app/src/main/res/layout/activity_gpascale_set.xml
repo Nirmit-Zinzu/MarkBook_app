@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        tools:context="com.nirmit.markbook.GPAScaleSet"
+        android:background="#909091">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/percentageTitle"
+            android:ems="6"
+            android:textAlignment="center"
+            android:id="@+id/percentageTitle"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:padding="10dp"
+           />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/letterTitle"
+            android:id="@+id/letterTitle"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+
+           />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/GPATitle"
+            android:id="@+id/gpaTitle"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:padding="10dp"
+            android:ems="6"
+            android:textAlignment="center"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/aPlus"
+            android:id="@+id/aPlus"
+            android:layout_below="@+id/percentageTitle"
+            android:padding="6dp"
+            android:ems="8"
+            android:textAlignment="center"
+            android:background="@color/aColor"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/a"
+            android:id="@+id/a"
+            android:layout_below="@+id/aPlus"
+            android:padding="6dp"
+            android:ems="8"
+            android:textAlignment="center"
+            android:background="@color/aColor"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/aMinus"
+            android:id="@+id/aMinus"
+            android:layout_below="@+id/a"
+            android:padding="6dp"
+            android:ems="8"
+            android:textAlignment="center"
+            android:background="@color/aColor"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bPlus"
+            android:id="@+id/bPlus"
+            android:layout_below="@+id/aMinus"
+            android:padding="6dp"
+            android:ems="8"
+            android:textAlignment="center"
+            android:background="@color/bColor"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/b"
+            android:id="@+id/b"
+            android:layout_below="@+id/bPlus"
+            android:padding="6dp"
+            android:ems="8"
+            android:textAlignment="center"
+            android:background="@color/bColor"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bMinus"
+            android:id="@+id/bMinus"
+            android:layout_below="@+id/b"
+            android:padding="6dp"
+            android:ems="8"
+            android:textAlignment="center"
+            android:background="@color/bColor"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cPlus"
+            android:id="@+id/cPlus"
+            android:layout_below="@+id/bMinus"
+            android:padding="6dp"
+            android:ems="8"
+            android:textAlignment="center"
+            android:background="@color/cColor"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/c"
+            android:id="@+id/c"
+            android:layout_below="@+id/cPlus"
+            android:padding="6dp"
+            android:ems="8"
+            android:textAlignment="center"
+            android:background="@color/cColor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cMinus"
+            android:id="@+id/cMinus"
+            android:layout_below="@+id/c"
+            android:padding="6dp"
+            android:ems="8"
+            android:textAlignment="center"
+            android:background="@color/cColor"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dPlus"
+            android:id="@+id/dPlus"
+            android:layout_below="@+id/cMinus"
+            android:padding="6dp"
+            android:ems="8"
+            android:textAlignment="center"
+            android:background="@color/dColor"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/d"
+            android:id="@+id/d"
+            android:layout_below="@+id/dPlus"
+            android:padding="6dp"
+            android:ems="8"
+            android:textAlignment="center"
+            android:background="@color/dColor"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dMinus"
+            android:id="@+id/dMinus"
+            android:layout_below="@+id/d"
+            android:padding="6dp"
+            android:ems="8"
+            android:textAlignment="center"
+            android:background="@color/dColor"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/f"
+            android:id="@+id/f"
+            android:layout_below="@+id/dMinus"
+            android:padding="6dp"
+            android:ems="8"
+            android:textAlignment="center"
+            android:background="@color/fColor"/>
+
+
+        <!-- Letter Grades -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/aPlusL"
+            android:id="@+id/aPlusL"
+            android:layout_below="@+id/letterTitle"
+            android:layout_centerHorizontal="true"
+            android:padding="6dp"
+            android:ems="4"
+            android:textAlignment="center"
+            android:background="@color/aColor"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/aL"
+            android:id="@+id/aL"
+            android:layout_below="@+id/aPlusL"
+            android:layout_centerHorizontal="true"
+            android:padding="6dp"
+            android:ems="4"
+            android:textAlignment="center"
+            android:background="@color/aColor"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/aMinusL"
+            android:id="@+id/aMinusL"
+            android:layout_below="@+id/aL"
+            android:layout_centerHorizontal="true"
+            android:padding="6dp"
+            android:ems="4"
+            android:textAlignment="center"
+            android:background="@color/aColor"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bPlusL"
+            android:id="@+id/bPlusL"
+            android:layout_below="@+id/aMinusL"
+            android:layout_centerHorizontal="true"
+            android:padding="6dp"
+            android:ems="4"
+            android:textAlignment="center"
+            android:background="@color/bColor"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bL"
+            android:id="@+id/bL"
+            android:layout_below="@+id/bPlusL"
+            android:layout_centerHorizontal="true"
+            android:padding="6dp"
+            android:ems="4"
+            android:textAlignment="center"
+            android:background="@color/bColor"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bMinusL"
+            android:id="@+id/bMinusL"
+            android:layout_below="@+id/bL"
+            android:layout_centerHorizontal="true"
+            android:padding="6dp"
+            android:ems="4"
+            android:textAlignment="center"
+            android:background="@color/bColor"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cPlusL"
+            android:id="@+id/cPlusL"
+            android:layout_below="@+id/bMinusL"
+            android:layout_centerHorizontal="true"
+            android:padding="6dp"
+            android:ems="4"
+            android:textAlignment="center"
+            android:background="@color/cColor"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cL"
+            android:id="@+id/cL"
+            android:layout_below="@+id/cPlusL"
+            android:layout_centerHorizontal="true"
+            android:padding="6dp"
+            android:ems="4"
+            android:textAlignment="center"
+            android:background="@color/cColor"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cMinusL"
+            android:id="@+id/cMinusL"
+            android:layout_below="@+id/cL"
+            android:layout_centerHorizontal="true"
+            android:padding="6dp"
+            android:ems="4"
+            android:textAlignment="center"
+            android:background="@color/cColor"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dPlusL"
+            android:id="@+id/dPlusL"
+            android:layout_below="@+id/cMinusL"
+            android:layout_centerHorizontal="true"
+            android:padding="6dp"
+            android:ems="4"
+            android:textAlignment="center"
+            android:background="@color/dColor"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dL"
+            android:id="@+id/dL"
+            android:layout_below="@+id/dPlusL"
+            android:layout_centerHorizontal="true"
+            android:padding="6dp"
+            android:ems="4"
+            android:textAlignment="center"
+            android:background="@color/dColor"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dMinusL"
+            android:id="@+id/dMinusL"
+            android:layout_below="@+id/dL"
+            android:layout_centerHorizontal="true"
+            android:padding="6dp"
+            android:ems="4"
+            android:textAlignment="center"
+            android:background="@color/dColor"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fL"
+            android:id="@+id/fL"
+            android:layout_below="@+id/dMinusL"
+            android:layout_centerHorizontal="true"
+            android:padding="6dp"
+            android:ems="4"
+            android:textAlignment="center"
+            android:background="@color/fColor"/>
+
+
+        <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/aPlusGPA"
+        android:id="@+id/aPlusGPA"
+        android:layout_below="@+id/gpaTitle"
+        android:padding="6dp"
+        android:ems="8"
+        android:textAlignment="center"
+            android:background="@color/aColor"
+        android:layout_alignParentEnd="true"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/aGPA"
+            android:id="@+id/aGPA"
+            android:layout_below="@+id/aPlusGPA"
+            android:padding="6dp"
+            android:ems="8"
+            android:textAlignment="center"
+            android:layout_alignParentEnd="true"
+            android:inputType="numberDecimal"
+            android:background="@color/aColor"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/aMinusGPA"
+            android:id="@+id/aMinusGPA"
+            android:layout_below="@+id/aGPA"
+            android:padding="6dp"
+            android:ems="8"
+            android:textAlignment="center"
+            android:background="@color/aColor"
+            android:layout_alignParentEnd="true"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/bPlusGPA"
+            android:id="@+id/bPlusGPA"
+            android:layout_below="@+id/aMinusGPA"
+            android:padding="6dp"
+            android:ems="8"
+            android:textAlignment="center"
+            android:background="@color/bColor"
+            android:layout_alignParentEnd="true"
+            android:inputType="numberDecimal"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/bGPA"
+            android:id="@+id/bGPA"
+            android:layout_below="@+id/bPlusGPA"
+            android:padding="6dp"
+            android:ems="8"
+            android:textAlignment="center"
+            android:background="@color/bColor"
+            android:layout_alignParentEnd="true"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/bMinusGPA"
+            android:id="@+id/bMinusGPA"
+            android:layout_below="@+id/bGPA"
+            android:padding="6dp"
+            android:ems="8"
+            android:textAlignment="center"
+            android:background="@color/bColor"
+            android:layout_alignParentEnd="true"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/cPlusGPA"
+            android:id="@+id/cPlusGPA"
+            android:layout_below="@+id/bMinusGPA"
+            android:padding="6dp"
+            android:ems="8"
+            android:textAlignment="center"
+            android:background="@color/cColor"
+            android:layout_alignParentEnd="true"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/cGPA"
+            android:id="@+id/cGPA"
+            android:layout_below="@+id/cPlusGPA"
+            android:padding="6dp"
+            android:ems="8"
+            android:textAlignment="center"
+            android:background="@color/cColor"
+            android:layout_alignParentEnd="true"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/cMinusGPA"
+            android:id="@+id/cMinusGPA"
+            android:layout_below="@+id/cGPA"
+            android:padding="6dp"
+            android:ems="8"
+            android:textAlignment="center"
+            android:background="@color/cColor"
+            android:layout_alignParentEnd="true"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/dPlusGPA"
+            android:id="@+id/dPlusGPA"
+            android:layout_below="@+id/cMinusGPA"
+            android:padding="6dp"
+            android:ems="8"
+            android:textAlignment="center"
+            android:background="@color/dColor"
+            android:layout_alignParentEnd="true"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/dGPA"
+            android:id="@+id/dGPA"
+            android:layout_below="@+id/dPlusGPA"
+            android:padding="6dp"
+            android:ems="8"
+            android:textAlignment="center"
+            android:background="@color/dColor"
+            android:layout_alignParentEnd="true"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/dMinusGPA"
+            android:id="@+id/dMinusGPA"
+            android:layout_below="@+id/dGPA"
+            android:padding="6dp"
+            android:ems="8"
+            android:textAlignment="center"
+            android:background="@color/dColor"
+            android:layout_alignParentEnd="true"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/fGPA"
+            android:id="@+id/fGPA"
+            android:layout_below="@+id/dMinusGPA"
+            android:padding="6dp"
+            android:ems="8"
+            android:textAlignment="center"
+            android:background="@color/fColor"
+            android:layout_alignParentEnd="true"
+            android:inputType="numberDecimal"
+            />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/saveButton"
+            android:id="@+id/saveButton"
+            android:layout_below="@+id/f"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:background="#a3c1bd"
+            android:layout_marginTop="5dp"/>
+
+    </RelativeLayout>
+
+
+</ScrollView>
